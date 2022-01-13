@@ -1,0 +1,32 @@
+img {
+    height: 80px;
+    cursor: pointer;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    z-index: 1;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    a {
+        color: white;
+        text-decoration: none;
+        margin-left: 32px;
+        font-weight: 500;
+        &:hover {
+            color: rgba(255, 255, 255, 0.8);
+            text-shadow: 125px 15px 30px #ad1a9a;
+            letter-spacing: -0.05em;
+            transition: all 0.25s ease-out;
+        }
+    }
+}
