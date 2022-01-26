@@ -1,17 +1,40 @@
 body {
     margin: 0;
+    font-family: 'Indie Flower', cursive;
 }
 
-.cv {
+.hOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
+    color: rgba($color: #204fdd3d, $alpha: 80.0);
+    overflow: hidden;
+    position: relative;
+    animation: skill 6s linear;
+    margin-top: 120px;
+    @keyframes skill {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+}
+
+.screenBackground {
     background: rgb(2, 0, 36);
-    background: linear-gradient(180deg, rgba(0, 11, 36, 0.082) 0%, rgba(255, 19, 97, 1) 67%, rgba(222, 236, 15, 0.603) 100%);
+    background-image: linear-gradient( 110.1deg, rgba(30, 2, 83, 1) 44.2%, rgba(198, 55, 160, 1) 138.2%);
     height: 100vh;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 body {
-    font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.75;
+    font-family: 'Indie Flower', cursive;
 }
 
 #timeline {
@@ -25,6 +48,7 @@ body {
 }
 
 .tl-item {
+    font-family: 'Indie Flower', cursive;
     transform: translate3d(0, 0, 0);
     position: relative;
     width: 25%;
@@ -45,7 +69,7 @@ body {
     }
     &:after {
         background: rgb(2, 0, 36);
-        background: linear-gradient(180deg, rgba(0, 11, 36, 0.082) 0%, rgba(255, 19, 97, 1) 67%, rgba(222, 236, 15, 0.603) 100%);
+        background-image: linear-gradient( 110.1deg, rgba(30, 2, 83, 1) 44.2%, rgba(198, 55, 160, 1) 138.2%);
         height: 100vh;
         opacity: 1;
         transition: opacity 0.5s ease;
@@ -83,18 +107,22 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
-    margin: 0 1.618em;
+    //margin: 0 1.618em;
     top: 55%;
     opacity: 0;
     h1 {
-        font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-family: 'Indie Flower', cursive;
         text-transform: uppercase;
         color: #1779cf;
-        font-size: 1.44rem;
+        font-size: 0.9rem;
         font-weight: normal;
+    }
+    p {
+        font-size: 0.8rem;
     }
 }
 
+// Tabellenüberschrift
 .tl-year {
     position: absolute;
     top: 50%;
@@ -104,8 +132,8 @@ body {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     p {
-        font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 1.728rem;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1.3rem;
         line-height: 0;
     }
 }
@@ -121,4 +149,16 @@ body {
     background-position: center center;
     transition: filter 0.5s ease;
     filter: grayscale(100%);
+}
+
+@media(max-width: 1000px) {
+    #timeline {
+        display: none;
+    }
+    .screenBackground {
+        display: none;
+    }
+    .hOne {
+        display: none;
+    }
 }

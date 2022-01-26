@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\send_mail"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "portfolio"
+    }
+}

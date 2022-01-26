@@ -7,6 +7,13 @@ import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { CvComponent } from './cv/cv.component';
 import { ProjekteComponent } from './projekte/projekte.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +21,14 @@ import { ProjekteComponent } from './projekte/projekte.component';
     MenuComponent,
     HeaderComponent,
     CvComponent,
-    ProjekteComponent
+    ProjekteComponent,
+    SkillsComponent,
+    ImpressumComponent,
+    DatenschutzComponent,
+    AboutMeComponent,
+    FooterComponent,
+    ContactComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,

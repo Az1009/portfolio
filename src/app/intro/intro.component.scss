@@ -1,0 +1,203 @@
+.content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    // margin-top: 50px;
+    height: calc(100vh - 200px);
+    position: relative;
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+/*.hOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-family: 'Indie Flower', cursive;
+    color: rgba($color: #204fdd3d, $alpha: 80.0);
+    position: relative;
+    animation: skill 4s linear;
+    @keyframes skill {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+}*/
+
+.intro {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 85px;
+}
+
+.greet {
+    display: flex;
+    flex-direction: column;
+    // width: 1100px;
+    text-transform: uppercase;
+    background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 8s linear infinite;
+    display: inline-block;
+    font-size: 32px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.profile img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    object-position: top;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 100%;
+    border-color: blue;
+    border: solid 2px blue;
+    padding-left: 0px;
+    // margin-right: 120px;
+    // margin-left: 120px;
+    box-shadow: 14px 14px 50px rgba(231, 231, 228, 0.438);
+}
+
+.mail {
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    border: blue solid 1px;
+    border-radius: 14px;
+    // margin-left: 700px;
+    width: 160px;
+    // height: 130px;
+    // margin-top: 200px;
+    box-shadow: 14px 14px 50px rgba(231, 231, 228, 0.438);
+    background-color: rgba(33, 15, 199, 0.603);
+    padding: 15px 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.mail:hover {
+    color: rgb(138, 136, 143);
+    box-shadow: 30px 5px 15px rgba(240, 28, 176, 0.4);
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: blanchedalmond;
+}
+
+.mailPic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+.txt {
+    font-family: 'Indie Flower', cursive;
+    color: rgba($color: #204fdd3d, $alpha: 80.0);
+    font-size: 32px;
+}
+
+@media(max-width: 1000px) {
+    .content {
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    img {
+        display: flex;
+        flex-direction: column;
+        width: 20px;
+        height: 20px;
+    }
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+    .greet {
+        font-size: 30px;
+    }
+    .intro {
+        display: flex;
+        margin-top: 17px;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .mail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 42px;
+        margin-top: 80px;
+    }
+    .mailPic {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30px;
+        height: 30px;
+    }
+    .mailPic img {
+        padding-left: 10px;
+    }
+    .txt {
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,42 @@
+.screenBackground {
+    color: white;
+    background: linear-gradient( 180deg, rgba(0, 11, 36, 0.082) 0%, #ff1361 67%, rgba(222, 236, 15, 0.603) 100%);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    height: 130vh;
+}
+
+.hOne {
+    font-family: 'Indie Flower', cursive;
+    color: rgb(209, 9, 85);
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    animation: skill 5s linear;
+    margin-left: 80px;
+    @keyframes skill {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+}
+
+.txt {
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+    color: rgb(235, 226, 229);
+    height: 40px;
+    //animation: skill 10s linear;
+    margin-left: 80px;
+    margin-right: 80px;
+    @keyframes skill {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\12.angular"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "portfolio"
+    }
+}

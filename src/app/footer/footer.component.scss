@@ -1,0 +1,47 @@
+    .footer {
+        display: flex;
+        height: 10vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .txt a {
+        font-family: 'Indie Flower', cursive;
+        color: gray;
+        font-size: 17px;
+        text-decoration: none;
+        padding: 5px;
+        &:hover {
+            color: rgba(215, 23, 240, 0.445);
+            text-shadow: 125px 85px 80px #d104ecb2;
+            letter-spacing: -0.05em;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+    
+    //responsive
+    @media(max-width: 1000px) {
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .txt {
+            text-align: center;
+        }
+        .txt a {
+            font-family: 'Indie Flower', cursive;
+            color: gray;
+            font-size: 10px;
+            text-decoration: none;
+            padding: 5px;
+            &:hover {
+                color: rgba(215, 23, 240, 0.445);
+                text-shadow: 125px 85px 80px #d104ecb2;
+                letter-spacing: -0.05em;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
