@@ -5,6 +5,7 @@
         justify-content: center;
         margin-left: 100px;
         margin-right: 100px;
+        height: 100vh;
     }
     
     .hOne {
@@ -15,7 +16,6 @@
         color: rgba($color: #204fdd3d, $alpha: 80.0);
         position: relative;
         animation: skill 10s linear;
-        margin-top: 60px;
         height: 80px;
         @keyframes skill {
             0% {
@@ -32,7 +32,6 @@
         justify-content: space-between;
         align-items: center;
         justify-content: center;
-        margin-bottom: 18px;
     }
     
     //HintergrundBild
