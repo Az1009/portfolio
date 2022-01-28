@@ -5,14 +5,15 @@
         justify-content: center;
         margin-left: 100px;
         margin-right: 100px;
-        height: 100vh;
     }
     
     .hOne {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Indie Flower', cursive;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
         color: rgba($color: #204fdd3d, $alpha: 80.0);
         position: relative;
         animation: skill 10s linear;
@@ -34,14 +35,15 @@
         justify-content: center;
     }
     
-    //HintergrundBild
+    // Text im HintergrundBild
     .snip1543 {
         display: flex;
         justify-content: center;
         justify-content: space-between;
         background-color: #fff;
         color: #ffffff;
-        font-family: 'Indie Flower', cursive;
+        font-family: Inter;
+        font-style: normal;
         font-size: 16px;
         margin: 40px;
         margin-top: 120px;
@@ -140,10 +142,11 @@
         letter-spacing: 1px;
     }
     
-    // 
+    // Textüberschrift im Bild
     .snip1543 h3 {
-        font-family: 'Indie Flower', cursive;
-        font-size: 36px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 16px;
         font-weight: 700;
         line-height: 1em;
         text-transform: uppercase;
@@ -151,6 +154,8 @@
     
     .snip1543 p {
         font-size: 0.9em;
+        font-family: 'Inter';
+        font-style: normal;
     }
     
     .snip1543 a {
@@ -201,25 +206,23 @@
             display: flex;
             flex-direction: column;
             margin: 0;
-            margin-top: 130px;
-            display: flex;
+            margin-top: 150px;
             font-size: 18px;
             font-size: 19px;
-            //margin-right: 20px;
-            //margin-left: 20px;
-        }
-        .proImg {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 4px;
         }
         .hOne {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 12px;
+            margin-top: 25px;
+            font-size: 30px;
+        }
+        // Container für die Bilder
+        .proImg {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
         }
         .snip1543 {
             display: flex;
@@ -227,6 +230,7 @@
             justify-content: center;
             width: 200px;
             height: 200px;
+            margin: 25px;
         }
         img {
             width: 300px;

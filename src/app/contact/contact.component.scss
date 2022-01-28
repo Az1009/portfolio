@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(2, 0, 36);
+    background: #131111;
     opacity: 1;
     transition: opacity 0.5s ease;
 }
@@ -13,7 +13,9 @@
     align-items: center;
     justify-content: center;
     height: 80px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 36px;
     color: rgba($color: #204fdd3d, $alpha: 80.0);
     overflow: hidden;
     position: relative;
@@ -43,8 +45,9 @@
 body,
 button,
 input {
-    font-family: 'Indie Flower', cursive;
-    font-weight: 700;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
     letter-spacing: 1.4px;
 }
 
@@ -52,11 +55,10 @@ input {
     display: flex;
 }
 
-.container {
+.content {
     flex: 0 1 700px;
     margin: auto;
     padding: 10px;
-    margin: 49px;
 }
 
 .screen {
@@ -109,32 +111,26 @@ input {
     flex-direction: column;
 }
 
+// Überschrift Kontaktformulars
 .app-title {
-    font-family: 'Indie Flower', cursive;
     display: flex;
     flex-direction: column;
     position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
     color: rgba($color: #204fdd3d, $alpha: 80.0);
-    font-size: 26px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
-
-/* .app-title:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 25px;
-    height: 4px;
-    background: #ea1d6f;
-} */
-
 .app-contact {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Inter';
+    font-style: normal;
+    color: white;
     margin-top: auto;
     font-size: 12px;
-    color: rgb(235, 196, 196);
 }
 
 .app-form-group {
@@ -151,7 +147,10 @@ input {
     text-align: right;
 }
 
+// Text im Formular
 .app-form-control {
+    font-family: 'Inter';
+    font-style: normal;
     width: 100%;
     padding: 10px 0;
     background: none;
@@ -165,7 +164,7 @@ input {
 }
 
 .app-form-control::placeholder {
-    color: #666;
+    color: #ddd;
 }
 
 .app-form-control:focus {
@@ -175,6 +174,8 @@ input {
 .app-form-button {
     background: none;
     border: none;
+    font-family: 'Inter';
+    font-style: normal;
     color: rgba($color: #204fdd3d, $alpha: 80.0);
     font-size: 14px;
     cursor: pointer;

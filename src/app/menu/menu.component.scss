@@ -1,60 +1,87 @@
-img {
-    height: 80px;
-    cursor: pointer;
-    // padding-left: 120px;
-    // padding-right: 120px;
-    // margin-top: 15px;
-}
-
-.menu {
-    // margin-top: 5px;
-    font-family: 'Indie Flower', cursive;
-    // position: absolute;
-    // left: 0;
-    // right: 0;
-    // top: 0;
-    height: 80px;
-    // z-index: 1;
-    // padding-left: 120px;
-    // padding-right: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    border-bottom: blue solid;
-    // height: 100px;
-    a {
-        color: white;
-        text-decoration: none;
-        margin-left: 32px;
-        font-weight: 500px;
-        &:hover {
-            color: rgba(215, 23, 240, 0.445);
-            text-shadow: 125px 85px 80px #d104ecb2;
-            letter-spacing: -0.05em;
-            transition: all 0.5s ease-out;
+    img {
+        height: 80px;
+        cursor: pointer;
+        // padding-left: 120px;
+        // padding-right: 120px;
+        // margin-top: 15px;
+    }
+    
+    .menu {
+        // margin-top: 5px;
+        font-family: 'Indie Flower', cursive;
+        // position: absolute;
+        // left: 0;
+        // right: 0;
+        // top: 0;
+        height: 80px;
+        // z-index: 1;
+        // padding-left: 120px;
+        // padding-right: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        border-bottom: blue solid;
+        // height: 100px;
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 32px;
+            font-weight: 500px;
+            &:hover {
+                color: rgba(215, 23, 240, 0.445);
+                text-shadow: 125px 85px 80px #d104ecb2;
+                letter-spacing: -0.05em;
+                transition: all 0.5s ease-out;
+            }
         }
     }
-}
-
-.nav {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 40px;
-    z-index: 999;
-    background-color: black;
-}
-
-// responsive
-@media(max-width: 1000px) {
-    .menu {
-        display: none;
-    }
-    .logo {
+    
+    .nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 16px 40px;
+        z-index: 999;
+        background-color: black;
     }
-}
+    
+    @media (max-width: 1000px) {
+        .nav {
+            display: none;
+            .navigation-menu {
+                height: 70px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #e7e7e7;
+            }
+            .main-navigation {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-left: 30px;
+            }
+            .main-navigation a {
+                padding: 15px 17px;
+            }
+            /* Hiding the hamburger icon on larger screens */
+            .hamburger-icon {
+                display: block;
+                background-color: red;
+                height: 50px;
+                width: 50px;
+            }
+            label {
+                color: yellow;
+            }
+            /* Ensuring that if the hamburger menu is active but
+            the screen becomes larger, the display will 
+            change to display items in a row instead of a column*/
+            #menu-toggle:checked+.main-navigation {
+                display: flex;
+                color: yellow;
+            }
+        }
+    }
