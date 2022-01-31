@@ -48,6 +48,11 @@
                                 background-color: black;
                             }
                             
+                            .nav-menu {
+                                display: none;
+                            }
+                            
+                            // responsiveMenu
                             @media (max-width: 1000px) {
                                 .nav {
                                     display: none;
@@ -57,17 +62,63 @@
                                     max-height: 0;
                                     overflow: hidden;
                                     transition: all 0.5s;
-                                    background-color: red;
+                                    background-color: #131111;
                                 }
                                 #hamburg:checked+.hamburg+nav.topmenu {
                                     max-height: 600px;
-                                    color: aqua;
                                     li {
                                         list-style: none;
                                     }
                                     a {
                                         text-decoration: none;
                                         color: white;
+                                        font-size: 22px;
+                                        font-family: 'Inter';
+                                        font-style: normal;
                                     }
+                                }
+                                label.hamburg {
+                                    display: block;
+                                    background: rgba(33, 15, 199, 0.603);
+                                    position: absolute;
+                                    right: 0;
+                                    width: 75px;
+                                    height: 50px;
+                                    position: relative;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    border-radius: 4px;
+                                }
+                                input#hamburg {
+                                    display: none;
+                                }
+                                .line {
+                                    position: absolute;
+                                    left: 10px;
+                                    height: 4px;
+                                    width: 55px;
+                                    background: #fff;
+                                    border-radius: 2px;
+                                    display: block;
+                                    transition: 0.5s;
+                                    transform-origin: center;
+                                }
+                                .line:nth-child(1) {
+                                    top: 12px;
+                                }
+                                .line:nth-child(2) {
+                                    top: 24px;
+                                }
+                                .line:nth-child(3) {
+                                    top: 36px;
+                                }
+                                #hamburg:checked+.hamburg .line:nth-child(1) {
+                                    transform: translateY(12px) rotate(-45deg);
+                                }
+                                #hamburg:checked+.hamburg .line:nth-child(2) {
+                                    opacity: 0;
+                                }
+                                #hamburg:checked+.hamburg .line:nth-child(3) {
+                                    transform: translateY(-12px) rotate(45deg);
                                 }
                             }
