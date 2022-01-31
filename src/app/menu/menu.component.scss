@@ -55,9 +55,19 @@
                                 nav.topmenu {
                                     height: auto;
                                     max-height: 0;
-                                    // overflow: hidden;
+                                    overflow: hidden;
                                     transition: all 0.5s;
                                     background-color: red;
-                                    z-index: 999;
+                                }
+                                #hamburg:checked+.hamburg+nav.topmenu {
+                                    max-height: 600px;
+                                    color: aqua;
+                                    li {
+                                        list-style: none;
+                                    }
+                                    a {
+                                        text-decoration: none;
+                                        color: white;
+                                    }
                                 }
                             }
