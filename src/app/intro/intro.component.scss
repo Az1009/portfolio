@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {}
+
 .content {
     color: white;
     display: flex;
     flex-direction: column;
     // margin-top: 50px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 216px);
     position: relative;
     padding-top: 100px;
     padding-left: 100px;
@@ -12,42 +15,53 @@
 
 .intro {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: space-be;
+    align-items: center;
 }
 
 .flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
-    margin-top: 85px;
 }
 
-.greet {
+span {
+    font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
-    // width: 1100px;
-    text-transform: uppercase;
-    background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 8s linear infinite;
-    display: inline-block;
+    color: white;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.bigLetter {
+    display: inline;
+}
+
+.letterColor {
+    color: #FA2759;
+    display: inline;
+}
+
+.txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    color: white;
     font-size: 32px;
 }
 
-@keyframes textclip {
-    to {
-        background-position: 200% center;
-    }
+.greet span {
+    color: blueviolet;
+    white-space: nowrap;
 }
 
+//@keyframes textclip {
+//to {
+//    background-position: 200% center;
+// }
+//}
 .profile img {
     width: 250px;
     height: 250px;
@@ -68,9 +82,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: bold;
+    font-family: 'Inter', sans-serif;
     margin-top: 30px;
     border: blue solid 1px;
     border-radius: 14px;
@@ -88,12 +100,7 @@
     box-shadow: 30px 5px 15px rgba(240, 28, 176, 0.4);
 }
 
-.txt {
-    display: flex;
-    flex-direction: column;
-    font-size: 27px;
-}
-
+//text mailbutton
 a {
     text-decoration: none;
     font-size: 22px;
@@ -124,14 +131,6 @@ a {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
     }
-}
-
-.txt {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    color: rgba($color: #204fdd3d, $alpha: 80.0);
-    font-size: 32px;
 }
 
 @media(max-width: 1000px) {

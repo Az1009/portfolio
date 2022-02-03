@@ -1,112 +1,114 @@
-                            img {
-                                height: 80px;
-                                cursor: pointer;
-                            }
-                            
-                            .menu {
-                                font-family: 'Indie Flower', cursive;
-                                height: 80px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: end;
-                                border-bottom: blue solid;
-                                a {
-                                    color: white;
-                                    text-decoration: none;
-                                    margin-left: 32px;
-                                    font-weight: 500px;
-                                    &:hover {
-                                        color: rgba(215, 23, 240, 0.445);
-                                        text-shadow: 125px 85px 80px #d104ecb2;
-                                        letter-spacing: -0.05em;
-                                        transition: all 0.5s ease-out;
-                                    }
-                                }
-                            }
-                            
-                            .nav {
-                                position: fixed;
-                                left: 0;
-                                right: 0;
-                                top: 0;
-                                display: flex;
-                                justify-content: space-between;
-                                padding: 16px 40px;
-                                z-index: 999;
-                                background-color: black;
-                            }
-                            
-                            .nav-menu {
-                                display: none;
-                            }
-                            
-                            // responsiveMenu
-                            @media (max-width: 1000px) {
-                                .nav {
-                                    display: none;
-                                }
-                                nav.topmenu {
-                                    height: auto;
-                                    max-height: 0;
-                                    overflow: hidden;
-                                    transition: all 0.5s;
-                                    background-color: #131111;
-                                }
-                                #hamburg:checked+.hamburg+nav.topmenu {
-                                    max-height: 600px;
-                                    li {
-                                        list-style: none;
-                                    }
-                                    a {
-                                        text-decoration: none;
-                                        color: white;
-                                        font-size: 22px;
-                                        font-family: 'Inter';
-                                        font-style: normal;
-                                    }
-                                }
-                                label.hamburg {
-                                    display: block;
-                                    background: rgba(33, 15, 199, 0.603);
-                                    position: absolute;
-                                    right: 0;
-                                    width: 75px;
-                                    height: 50px;
-                                    position: relative;
-                                    margin-left: auto;
-                                    margin-right: auto;
-                                    border-radius: 4px;
-                                }
-                                input#hamburg {
-                                    display: none;
-                                }
-                                .line {
-                                    position: absolute;
-                                    left: 10px;
-                                    height: 4px;
-                                    width: 55px;
-                                    background: #fff;
-                                    border-radius: 2px;
-                                    display: block;
-                                    transition: 0.5s;
-                                    transform-origin: center;
-                                }
-                                .line:nth-child(1) {
-                                    top: 12px;
-                                }
-                                .line:nth-child(2) {
-                                    top: 24px;
-                                }
-                                .line:nth-child(3) {
-                                    top: 36px;
-                                }
-                                #hamburg:checked+.hamburg .line:nth-child(1) {
-                                    transform: translateY(12px) rotate(-45deg);
-                                }
-                                #hamburg:checked+.hamburg .line:nth-child(2) {
-                                    opacity: 0;
-                                }
-                                #hamburg:checked+.hamburg .line:nth-child(3) {
-                                    transform: translateY(-12px) rotate(45deg);
-                                }
-                            }
+body {
+    font-family: 'Inter';
+}
+
+img {
+    height: 80px;
+    cursor: pointer;
+}
+
+.menu {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    a {
+        color: white;
+        text-decoration: none;
+        margin-left: 32px;
+        font-weight: 500px;
+        font-family: 'Inter';
+        &:hover {
+            color: rgba(215, 23, 240, 0.445);
+            text-shadow: 125px 85px 80px #d104ecb2;
+            letter-spacing: -0.05em;
+            transition: all 0.5s ease-out;
+        }
+    }
+}
+
+.nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    z-index: 999;
+    background-color: black;
+}
+
+.nav-menu {
+    display: none;
+}
+
+// responsiveMenu
+@media (max-width: 1000px) {
+    .nav {
+        display: none;
+    }
+    nav.topmenu {
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+        background-color: #131111;
+    }
+    #hamburg:checked+.hamburg+nav.topmenu {
+        max-height: 600px;
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            font-style: normal;
+        }
+    }
+    label.hamburg {
+        display: block;
+        background: rgba(33, 15, 199, 0.603);
+        position: absolute;
+        right: 0;
+        width: 75px;
+        height: 50px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+    }
+    input#hamburg {
+        display: none;
+    }
+    .line {
+        position: absolute;
+        left: 10px;
+        height: 4px;
+        width: 55px;
+        background: #fff;
+        border-radius: 2px;
+        display: block;
+        transition: 0.5s;
+        transform-origin: center;
+    }
+    .line:nth-child(1) {
+        top: 12px;
+    }
+    .line:nth-child(2) {
+        top: 24px;
+    }
+    .line:nth-child(3) {
+        top: 36px;
+    }
+    #hamburg:checked+.hamburg .line:nth-child(1) {
+        transform: translateY(12px) rotate(-45deg);
+    }
+    #hamburg:checked+.hamburg .line:nth-child(2) {
+        opacity: 0;
+    }
+    #hamburg:checked+.hamburg .line:nth-child(3) {
+        transform: translateY(-12px) rotate(45deg);
+    }
+}
